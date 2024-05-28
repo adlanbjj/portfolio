@@ -1,0 +1,36 @@
+.nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    margin: 5px;
+}
+
+body.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  body.dark {
+    --background-color: #000000;
+    --text-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  }
+
+  .sw-ic {
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }

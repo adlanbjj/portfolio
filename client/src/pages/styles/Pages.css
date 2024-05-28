@@ -1,0 +1,22 @@
+/* ABOUT */
+
+.glob-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15vh;
+}
+
+.right-block img {
+    width: 300px;
+}
+
+.desc-text {
+    width: 400px;
+}
+
+/* CONTACT */
+
+/* SKILLS */
+
+/* PROJECTS */
