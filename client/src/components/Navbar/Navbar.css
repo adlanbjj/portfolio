@@ -1,36 +1,86 @@
 .nav-cont {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .link {
-    margin: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 body.light {
-    --background-color: #ffffff;
-    --text-color: #000000;
-  }
-  
-  body.dark {
-    --background-color: #000000;
-    --text-color: #ffffff;
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: all 0.3s ease;
-  }
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
 
-  .sw-ic {
-    font-size: 1.8em;
-    cursor: pointer;
-  }
+body.dark {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
 
-  .link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-  }
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.sw-ic {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+
+.nav-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  margin: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+body.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.sw-ic {
+  font-size: 1.8em;
+  cursor: pointer;
+}

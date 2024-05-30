@@ -11,21 +11,19 @@ const AboutPage = () => {
       <div className="glob-cont">
         <div className="left-block">
           <p>
-            Hello, i'm <span>ADLAN ISAEV</span>
+            Hello, i'm <span className="name-title">ADLAN ISAEV</span>
           </p>
-          <p> Web and Mobile Applications Developer</p>
+          <p className="sec-title-text"> Web and Mobile Applications Developer</p>
           <p className="desc-text">
             As a passionate developer, I specialize in creating innovative and
             user-friendly web and mobile applications. My focus is on delivering
             high-quality and efficient software solutions
           </p>
           <div className="social-media-icons">
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faLinkedin} />
-            <FontAwesomeIcon icon={faGithub} />
-            <FontAwesomeIcon icon={faEnvelope} />
-            
-
+            <FontAwesomeIcon className="contact-icon" icon={faInstagram} />
+            <FontAwesomeIcon className="contact-icon" icon={faLinkedin} />
+            <FontAwesomeIcon className="contact-icon" icon={faGithub} />
+            <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
           </div>
         </div>
         <div className="right-block">

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Navbar.css';
 import './ThemeToggle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -37,10 +37,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="nav-block">
-        <Link className="link" to="/">About</Link>
-        <Link className="link" to="/contact">Contact</Link>
-        <Link className="link" to="/skills">Skills</Link>
-        <Link className="link" to="/projects">Projects</Link>
+        <NavLink exact className="link" activeClassName="active" to="/">About</NavLink>
+        <NavLink className="link" activeClassName="active" to="/skills">Skills</NavLink>
+        <NavLink className="link" activeClassName="active" to="/projects">Projects</NavLink>
+        <NavLink className="link" activeClassName="active" to="/contact">Contact</NavLink>
       </div>
     </div>
   );

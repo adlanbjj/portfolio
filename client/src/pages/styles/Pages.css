@@ -1,22 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 /* ABOUT */
 
 .glob-cont {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20vh;
+  font-family: "Quicksand", sans-serif;
 }
 
 .right-block img {
-    width: 300px;
+  width: 300px;
 }
 
 .desc-text {
-    width: 400px;
+  width: 500px;
+}
+
+.sec-title-text {
+  font-weight: bold;
+}
+
+.contact-icon {
+  margin: 5px;
+  height: 25px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.name-title {
+  font-weight: 600;
+  color: rgb(187, 159, 124);
+}
+
+.glob-cont p {
+  font-size: 22px;
+  font-weight: 300;
 }
 
 /* CONTACT */
 
 /* SKILLS */
+
+.skill-global-cont {
+    display: flex;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+  .skill-cont {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  .front-block,
+  .back-block,
+  .db-block,
+  .tools-block {
+    width: 45%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .front-wrap-icons {
+    display: flex;
+  }
+
+  .front-ic {
+    font-size: 2em;
+    margin: 5px;
+  }
+
+  .title-block {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  .titl-skill {
+    border: 1px solid gray;
+    border-radius: 9px;
+    padding: 5px 5px 5px 30px;
+    display: inline-block;
+    position: relative; 
+    width: 300px;
+    text-align: center;
+    height: 40px;
+  }
+  
+  .desktop-icon {
+    position: absolute;
+    top: 5px; 
+    left: -10px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: rgb(188, 188, 188);
+  }
 
 /* PROJECTS */
