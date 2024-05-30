@@ -40,7 +40,6 @@ const Navbar = () => {
         <NavLink exact className="link" activeClassName="active" to="/">About</NavLink>
         <NavLink className="link" activeClassName="active" to="/skills">Skills</NavLink>
         <NavLink className="link" activeClassName="active" to="/projects">Projects</NavLink>
-        <NavLink className="link" activeClassName="active" to="/contact">Contact</NavLink>
       </div>
     </div>
   );

@@ -1,43 +1,92 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+body.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+body.dark {
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+:root {
+    --color: #1e293b;
+    --c1: #fbda61;
+    --c2: #3bd2e3;
+    --c3: #2563eb;
+    --gradient: linear-gradient(
+      60deg,
+      var(--c3),
+      var(--c2),
+      var(--c1),
+      var(--c2),
+      var(--c3)
+    );
+    --scale-start: 0.5;
+    --scale-end: 1.001;
+    --hover-offset: 5%;
+    --ease-elastic: linear(
+      0, 0.186 2.1%, 0.778 7.2%, 1.027 9.7%, 1.133, 1.212, 1.264, 1.292 15.4%,
+      1.296, 1.294, 1.285, 1.269 18.9%, 1.219 20.9%, 1.062 25.8%, 0.995 28.3%,
+      0.944 31.1%, 0.93, 0.921, 0.92 35.7%, 0.926, 0.94 39.7%, 1.001 47%, 1.014,
+      1.021 52.4%, 1.02 56.4%, 1 65.5%, 0.994 70.7%, 1.001 88.4%, 1
+    );
+    --ease-bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+  
 
 /* ABOUT */
 
 .glob-cont {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20vh;
-  font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 9px;
+    height: 500px;
+    margin: 10vh;
+    border: 1px solid  #2894b2;
+}
+
+.glob-wrap-cont {
+    display: flex;
+    justify-content: space-around;
 }
 
 .right-block img {
-  width: 300px;
+   width: 400px;
 }
 
 .desc-text {
-  width: 500px;
+    width: 500px;
 }
 
 .sec-title-text {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .contact-icon {
-  margin: 5px;
-  height: 25px;
-  border: 1px solid gray;
-  padding: 5px;
-  border-radius: 4px;
+    margin: 5px;
+    height: 25px;
+    border: 1px solid #1e7087;
+    padding: 5px;
+    border-radius: 9px;
 }
 
 .name-title {
-  font-weight: 600;
-  color: rgb(187, 159, 124);
+    margin-inline: auto;
+    padding-block: 0.2em;
+    max-inline-size: 15ch;
+    text-wrap: balance;
+    background-image: var(--gradient);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .glob-cont p {
-  font-size: 22px;
-  font-weight: 300;
+    font-size: 22px;
+    font-weight: 300;
 }
 
 /* CONTACT */
@@ -46,44 +95,51 @@
 
 .skill-global-cont {
     display: flex;
-    height: 70vh;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+}
 
-  }
-  
-  .skill-cont {
+.skill-cont {
     display: flex;
-    flex-wrap: wrap;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 8px 0 rgb(212, 212, 212);
+    border-radius: 9px;
+    flex-direction: column;
+    border: 3px solid white;
+    align-items: center;
+}
 
-  }
-  
-  .front-block,
-  .back-block,
-  .db-block,
-  .tools-block {
-    width: 45%;
-    margin: 20px;
+.top-cont, .bottom-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.front-block,
+.back-block,
+.db-block,
+.tools-block {
+    margin: 50px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .front-wrap-icons {
-    display: flex;
-  }
+}
 
-  .front-ic {
+.front-wrap-icons {
+    display: flex;
+}
+
+.front-ic, .back-ic  {
     font-size: 2em;
     margin: 5px;
-  }
+    color: var(--text-color);
+}
 
-  .title-block {
+.title-block {
     position: relative; 
     display: inline-block; 
-  }
-  
-  .titl-skill {
-    border: 1px solid gray;
+}
+
+.titl-skill {
+    border: 1px solid #9024ae;
     border-radius: 9px;
     padding: 5px 5px 5px 30px;
     display: inline-block;
@@ -91,16 +147,24 @@
     width: 300px;
     text-align: center;
     height: 40px;
-  }
-  
-  .desktop-icon {
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--text-color);
+}
+
+.desktop-icon {
     position: absolute;
     top: 5px; 
     left: -10px;
-    border: 1px solid gray;
+    border: 1px solid #66127d;
     padding: 10px;
     border-radius: 9px;
-    background-color: rgb(188, 188, 188);
-  }
+    background-color: var(--background-color);
+    width: 25px;
+    height: 25px;
+}
+
+
+
 
 /* PROJECTS */
