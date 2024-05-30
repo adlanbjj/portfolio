@@ -1,12 +1,18 @@
 body.light {
     --background-color: #ffffff;
     --text-color: #000000;
-}
-
-body.dark {
+    --card-background-color: #f9f9f9;
+    --card-text-color: #333333;
+    --card-link-color: #007BFF;
+  }
+  
+  body.dark {
     --background-color: #000000;
     --text-color: #ffffff;
-}
+    --card-background-color: #1e1e1e;
+    --card-text-color: #cccccc;
+    --card-link-color: #1e90ff;
+  }
 
 :root {
     --color: #1e293b;
@@ -89,6 +95,29 @@ body.dark {
     font-weight: 300;
 }
 
+.social-media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icons a {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.download-icon {
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: var(--text-color);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.download-icon:hover {
+  color: #007BFF;
+}
+
 /* CONTACT */
 
 /* SKILLS */
@@ -139,7 +168,7 @@ body.dark {
 }
 
 .titl-skill {
-    border: 1px solid #9024ae;
+    border: 1px solid #1e7087;
     border-radius: 9px;
     padding: 5px 5px 5px 30px;
     display: inline-block;
@@ -156,7 +185,7 @@ body.dark {
     position: absolute;
     top: 5px; 
     left: -10px;
-    border: 1px solid #66127d;
+    border: 1px solid #1e7087;
     padding: 10px;
     border-radius: 9px;
     background-color: var(--background-color);
@@ -168,3 +197,53 @@ body.dark {
 
 
 /* PROJECTS */
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    background-color: var(--card-background-color);
+    color: var(--card-text-color);
+  }
+  
+  .card-image {
+    height: 200px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.25em;
+    margin: 0 0 10px 0;
+  }
+  
+  .card-description {
+    font-size: 0.875em;
+    line-height: 1.5;
+  }
+  
+  .card-tech-stack {
+    font-size: 0.875em;
+    margin: 15px 0;
+  }
+  
+  .card-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: var(--card-link-color);
+    font-size: 0.875em;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }

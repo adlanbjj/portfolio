@@ -26,15 +26,38 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-block {
+  display: flex;
 }
 
 .link {
-  margin: 5px;
+  margin: 0 15px;
   text-decoration: none;
   color: var(--text-color);
+  font-size: 1em;
+  position: relative;
+  transition: color 0.3s;
 }
 
+.link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--text-color);
+  transition: width 0.3s;
+}
 
+.link:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}
 
 .active {
   text-decoration: underline;
@@ -44,7 +67,5 @@ body.dark {
 .link:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
-
 }
-
 
