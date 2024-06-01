@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+
+# custom redirects/rewrites
+redirects:
+  - source: </[^.]+|.html|.json|.svg|.png|.jpg|.jpeg|.gif|.ico|.css|.js|.map|.txt|.woff|.woff2|.ttf|.otf|.eot|.yml|.yaml|.pdf|.zip|.mp3|.mp4|.wav|.ogg|.webm|.m4a|.m3u8|.ts|.m3u|.dash|.wma|.wmv|.flv|.ogg|.webp|.mpd>
+    target: /index.html
+    status: 200

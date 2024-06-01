@@ -54,7 +54,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="right-block">
-          <img src={myImage} alt="My Image" />
+          <img src={myImage} alt="img" />
         </div>
       </div>
     </div>
