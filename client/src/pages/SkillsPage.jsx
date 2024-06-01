@@ -9,10 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons/faJs";
 import {
-  faAndroid,
   faBootstrap,
   faCss3,
-  faFigma,
   faHtml5,
   faNodeJs,
   faPhp,
